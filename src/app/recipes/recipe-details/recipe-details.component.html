@@ -1,0 +1,56 @@
+
+<!-- <h2>Recipe Details</h2> 
+
+<hr/>
+<div *ngIf="recipe">
+  <div>
+    <label><b>Recipe Name: </b></label> {{recipe.name}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{recipe.description}}
+  </div>
+  <div>
+    <label><b>Image Path: </b></label> {{recipe.imagePath}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="goToRecipeList()" class="btn btn-primary">Back to Recipe List</button><br> -->
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="" alt="" class="img-fluid">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{recipe.name}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Manage Recipe
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">To Shopping list</a></li>
+                <li><a href="#">Edit Recipe</a></li>
+                <li><a href="#">Delete Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{recipe.description}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{recipe.imagePath}}</h1>
+    </div>
+</div>
+<button (click)="goToRecipeList()" class="btn btn-primary">Back to Recipe List</button>
+ 
